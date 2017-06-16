@@ -4,7 +4,7 @@ import edu.wpi.first.wpilibj.SpeedController;
 
 
 
-public class TransmissionFourWheel extends Transmission
+public class TransmissionFourWheel_old extends Transmission_old
 {
 
 public final SpeedController rightRearSpeedController;
@@ -26,7 +26,7 @@ private MotorDirection leftRearMotorDirection = MotorDirection.FORWARD;
  * @author Noah Golmant
  * @written 23 July 2015
  */
-public TransmissionFourWheel (SpeedController rightFrontSpeedController,
+public TransmissionFourWheel_old (SpeedController rightFrontSpeedController,
         SpeedController rightRearSpeedController,
         SpeedController leftFrontSpeedController,
         SpeedController leftRearSpeedController)

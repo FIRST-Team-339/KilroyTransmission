@@ -3,7 +3,7 @@ package org.usfirst.frc.team339.Utils;
 
 import org.usfirst.frc.team339.Hardware.Hardware;
 import org.usfirst.frc.team339.HardwareInterfaces.KilroyCamera;
-import org.usfirst.frc.team339.HardwareInterfaces.transmission.Transmission_old;
+import org.usfirst.frc.team339.HardwareInterfaces.transmission.Transmission_old_old;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Relay;
 import edu.wpi.first.wpilibj.Timer;
@@ -18,18 +18,18 @@ public class Drive_old
  *            Transmission object the class uses to control the motors.
  * @author Alex Kneipp
  */
-public Drive_old (Transmission_old transmission)
+public Drive_old (Transmission_old_old transmission)
 {
     this.transmission = transmission;
 }
 
-public Drive_old (Transmission_old transmission, KilroyCamera camera)
+public Drive_old (Transmission_old_old transmission, KilroyCamera camera)
 {
     this(transmission);
     this.camera = camera;
 }
 
-public Drive_old (Transmission_old transmission, KilroyCamera camera,
+public Drive_old (Transmission_old_old transmission, KilroyCamera camera,
         Relay ringLightRelay)
 {
     this(transmission, camera);
@@ -2631,7 +2631,7 @@ private final double DEFAULT_ALIGNMENT_DEADBAND = .1;
 
 private final double DEFAULT_CAMERA_ALIGNMENT_TURNING_SPEED = .45;
 
-private Transmission_old transmission = null;
+private Transmission_old_old transmission = null;
 
 // Camera we use for vision processing.
 private KilroyCamera camera = null;

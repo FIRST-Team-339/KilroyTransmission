@@ -24,8 +24,8 @@ import org.usfirst.frc.team339.HardwareInterfaces.MomentarySwitch;
 import org.usfirst.frc.team339.HardwareInterfaces.RobotPotentiometer;
 import org.usfirst.frc.team339.HardwareInterfaces.SingleThrowSwitch;
 import org.usfirst.frc.team339.HardwareInterfaces.UltraSonic;
-import org.usfirst.frc.team339.HardwareInterfaces.transmission.TransmissionFourWheel;
-import org.usfirst.frc.team339.HardwareInterfaces.transmission.TransmissionMecanum;
+import org.usfirst.frc.team339.HardwareInterfaces.transmission.TransmissionFourWheel_old;
+import org.usfirst.frc.team339.HardwareInterfaces.transmission.TransmissionMecanum_old;
 import org.usfirst.frc.team339.Utils.BallIntake;
 import org.usfirst.frc.team339.Utils.Drive;
 import org.usfirst.frc.team339.Utils.Shooter;
@@ -318,10 +318,10 @@ public static Joystick rightOperator = new Joystick(3);
 // Drive system
 // ------------------------------------
 
-public static TransmissionMecanum mecanumDrive = new TransmissionMecanum(
+public static TransmissionMecanum_old mecanumDrive = new TransmissionMecanum_old(
         rightFrontMotor, rightRearMotor, leftFrontMotor, leftRearMotor);
 
-public static TransmissionFourWheel tankDrive = new TransmissionFourWheel(
+public static TransmissionFourWheel_old tankDrive = new TransmissionFourWheel_old(
         rightFrontMotor, rightRearMotor, leftFrontMotor, leftRearMotor);
 
 

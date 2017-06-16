@@ -3,7 +3,7 @@ package org.usfirst.frc.team339.HardwareInterfaces.transmission;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.SpeedController;
 
-public class TransmissionMecanum extends TransmissionFourWheel
+public class TransmissionMecanum_old extends TransmissionFourWheel_old
 {
 
 /**
@@ -16,7 +16,7 @@ public class TransmissionMecanum extends TransmissionFourWheel
  *
  * @author Noah Golmant #written 23 July 2015
  */
-public TransmissionMecanum (SpeedController rightFrontSpeedController,
+public TransmissionMecanum_old (SpeedController rightFrontSpeedController,
         SpeedController rightRearSpeedController,
         SpeedController leftFrontSpeedController,
         SpeedController leftRearSpeedController)

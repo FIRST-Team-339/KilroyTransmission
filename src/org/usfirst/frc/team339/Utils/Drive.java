@@ -1,8 +1,8 @@
 package org.usfirst.frc.team339.Utils;
 
 import org.usfirst.frc.team339.HardwareInterfaces.UltraSonic;
-import org.usfirst.frc.team339.HardwareInterfaces.transmission.TransmissionFourWheel;
-import org.usfirst.frc.team339.HardwareInterfaces.transmission.TransmissionMecanum;
+import org.usfirst.frc.team339.HardwareInterfaces.transmission.TransmissionFourWheel_old;
+import org.usfirst.frc.team339.HardwareInterfaces.transmission.TransmissionMecanum_old;
 import org.usfirst.frc.team339.Vision.ImageProcessor;
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Timer;
@@ -24,9 +24,9 @@ public class Drive
  * can use the appropriate code to drive our wheels.
  * 
  */
-private TransmissionMecanum transmissionMecanum = null;
+private TransmissionMecanum_old transmissionMecanum = null;
 
-private TransmissionFourWheel transmissionFourWheel = null;
+private TransmissionFourWheel_old transmissionFourWheel = null;
 
 private ImageProcessor imageProcessor = null;
 
@@ -65,7 +65,7 @@ private boolean debugStatus = false;
  * @param imageProcessor
  *            The processor we want to use for aiming and aligning
  */
-public Drive (TransmissionMecanum transmissionMecanum,
+public Drive (TransmissionMecanum_old transmissionMecanum,
         ImageProcessor imageProcessor)
 {
     this.transmissionMecanum = transmissionMecanum;
@@ -97,7 +97,7 @@ public Drive (TransmissionMecanum transmissionMecanum,
  * @param rightUlt
  *            The ultrasonic on the right side of the robot
  */
-public Drive (TransmissionMecanum transmissionMecanum,
+public Drive (TransmissionMecanum_old transmissionMecanum,
         ImageProcessor imageProcessor,
         Encoder rightFrontEncoder, Encoder rightRearEncoder,
         Encoder leftFrontEncoder, Encoder leftRearEncoder,
@@ -125,7 +125,7 @@ public Drive (TransmissionMecanum transmissionMecanum,
  * @param imageProcessor
  *            The processor we want to use for aiming and aligning
  */
-public Drive (TransmissionFourWheel transmissionFourWheel,
+public Drive (TransmissionFourWheel_old transmissionFourWheel,
         ImageProcessor imageProcessor)
 {
     this.transmissionFourWheel = transmissionFourWheel;
@@ -159,7 +159,7 @@ public Drive (TransmissionFourWheel transmissionFourWheel,
  * @param leftUlt
  *            The ultrasonic on the left side of the robot
  */
-public Drive (TransmissionFourWheel transmissionFourWheel,
+public Drive (TransmissionFourWheel_old transmissionFourWheel,
         ImageProcessor imageProcessor,
         Encoder leftFrontEncoder, Encoder rightFrontEncoder,
         Encoder leftRearEncoder, Encoder rightRearEncoder,
